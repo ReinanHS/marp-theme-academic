@@ -12,7 +12,7 @@
 
 section {
   background-image: none;
-  font-family: 'FangSong', sans-serif;
+  font-family: sans-serif, 'FangSong';
   padding-top: 90px;
   padding-left: 40px;
   padding-right: 40px;
@@ -68,7 +68,7 @@ section.lead p {
 }
 
 header {
-  background-color: #4892ec;
+  background-color: #000000;
   color: #fff;
   font-size: 1em;
   font-weight: 700;
@@ -76,7 +76,7 @@ header {
 
 blockquote {
   max-width: 90%;
-  border-top: 0.1em dashed #b3f2ff;
+  border-top: 0.1em dashed #f3ff0fc9;
   font-size: 60%;
   position: absolute;
   bottom: 20px;
