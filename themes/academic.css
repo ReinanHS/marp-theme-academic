@@ -7,12 +7,12 @@
 :root {
   --color-background: #fff;
   --color-foreground: #4892ec;
-  --color-highlight: #c6ec65;
+  --color-highlight: #056bfa;
 }
 
 section {
   background-image: none;
-  font-family: 'JeBrains Mono', sans-serif;
+  font-family: 'FangSong', sans-serif;
   padding-top: 90px;
   padding-left: 40px;
   padding-right: 40px;
@@ -76,7 +76,7 @@ header {
 
 blockquote {
   max-width: 90%;
-  border-top: 0.1em dashed #555;
+  border-top: 0.1em dashed #b3f2ff;
   font-size: 60%;
   position: absolute;
   bottom: 20px;
@@ -94,5 +94,5 @@ img[alt~="center"] {
 }
 
 code {
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'JetBrains Mono', monospace;
 }
