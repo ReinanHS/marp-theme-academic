@@ -65,7 +65,6 @@ section.lead h5 strong {
 }
 section.lead p {
   text-align: right;
-  color: #9cfeb8;
 }
 
 header {
@@ -76,6 +75,7 @@ header {
 }
 
 blockquote {
+  color: #9cfeb8;
   max-width: 90%;
   border-top: 0.1em dashed #f3ff0fc9;
   font-size: 60%;
