@@ -6,7 +6,7 @@
 
 :root {
   --color-background: #fff;
-  --color-foreground: #97f5a3;
+  --color-foreground: #4892ec;
   --color-highlight: #9cfeb8;
 }
 
@@ -65,6 +65,7 @@ section.lead h5 strong {
 }
 section.lead p {
   text-align: right;
+  color: #9cfeb8;
 }
 
 header {
