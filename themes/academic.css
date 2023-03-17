@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 :root {
-  --color-background: #4892ec;
+  --color-background: #fff;
   --color-foreground: #0ddb10;
   --color-highlight: #9cfeb8;
 }
