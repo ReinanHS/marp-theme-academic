@@ -70,6 +70,7 @@ section.lead p {
 header {
   background-color: #4892ec;
   color: #fff;  
+  text-shadow: #fff 2px 2px 0.2rem;
   font-size: 1em;
   font-weight: 700;
 }
