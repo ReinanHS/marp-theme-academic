@@ -6,7 +6,7 @@
 
 :root {
   --color-background: #fff;
-  --color-foreground: #94bdf0;
+  --color-foreground: #6dfbce;
   --color-highlight: #9cfeb8;
 }
 
@@ -69,7 +69,7 @@ section.lead p {
 
 header {
   background-color: #4892ec;
-  color: #fff;
+  color: #4892ec;
   font-size: 1em;
   font-weight: 700;
 }
