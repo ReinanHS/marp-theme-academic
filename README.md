@@ -11,6 +11,8 @@ This is a cutomized template for the vscode plugin **marp**, which is a wonderfu
 
 ## preview🎨
 
+📌Click [here](https://marp-theme-academic.vercel.app) to have an instant view!
+
 ![image](https://user-images.githubusercontent.com/98319888/225852411-5a2389db-03a9-4e07-9b5e-1a2b2c3ee46e.png)
 
 ![image](https://user-images.githubusercontent.com/98319888/225852512-829ec28a-b375-49a6-a575-cd1d430bc2be.png)
