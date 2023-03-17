@@ -6,7 +6,7 @@
 
 :root {
   --color-background: #fff;
-  --color-foreground: #fff;
+  --color-foreground: #4892ec;
   --color-highlight: #4892ec;
 }
 
@@ -74,7 +74,6 @@ header {
 }
 
 blockquote {
-  color: #9cfeb8;
   max-width: 90%;
   border-top: 0.1em dashed #f3ff0fc9;
   font-size: 60%;
@@ -95,5 +94,4 @@ img[alt~="center"] {
 
 code {
   font-family: 'JetBrains Mono', monospace;
-  background-color: #9cfeb8;
 }
