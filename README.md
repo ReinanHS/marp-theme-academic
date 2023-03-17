@@ -35,7 +35,7 @@ This is a cutomized template for the vscode plugin **marp**, which is a wonderfu
   "markdown.marp.enableHtml": true
 ```
 
-3. You may use the helloworld.md file as a template. Just enjoy it!🥰
+3. You may use the [helloworld.md](./helloworld.md) file as a template. Just enjoy it!🥰
 
 ## Note🔔
 
