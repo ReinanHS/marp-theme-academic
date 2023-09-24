@@ -1,0 +1,55 @@
+name: marp-to-pages
+concurrency: marp-to-pages
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Ensure build dir exists
+        run: mkdir -p build
+
+      - name: Copy images directory (if exists)
+        run: if [[ -d img ]]; then cp -R img build/img; fi
+
+      - name: Marp Build (README)
+        uses: docker://marpteam/marp-cli:v3.3.0
+        with:
+          args: slide-deck.md --theme themes/academic.css -o build/index.html
+        env:
+          MARP_USER: root:root
+          LANG: "pt_BR.UTF-8"
+
+      - name: Marp Build (README.pdf)
+        uses: docker://marpteam/marp-cli:v3.3.0
+        with:
+          args: slide-deck.md --theme themes/academic.css --allow-local-files -o build/README.pdf
+        env:
+          MARP_USER: root:root
+          LANG: "pt_BR.UTF-8"
+
+      - name: Marp Build (README.pptx)
+        uses: docker://marpteam/marp-cli:v3.3.0
+        with:
+          args: slide-deck.md --theme themes/academic.css --allow-local-files -o build/README.pptx
+        env:
+          MARP_USER: root:root
+          LANG: "pt_BR.UTF-8"
+
+      - name: Deploy production
+        if: ${{ github.event_name == 'push' }}
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: ./build/
+          clean-exclude: pr-preview/

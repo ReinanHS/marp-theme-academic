@@ -1,0 +1,6 @@
+{
+    "markdown.marp.themes": [
+        "https://raw.githubusercontent.com/yunzinan/marp-theme-academic/main/themes/academic.css"
+    ],
+    "markdown.marp.enableHtml": true
+}

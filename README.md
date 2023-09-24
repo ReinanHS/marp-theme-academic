@@ -1,46 +1,81 @@
-# yunzian/marp-theme-academic
+<div align="center">
+   <img src="https://marp.app/assets/marp.svg" alt="Marp Logo" width="40%">
+</div><br>
 
-> this template is forked from  [kaisugi/marp-theme-academic](https://github.com/kaisugi/marp-theme-academic), modified by yunzinan😉.
+# ReinanHS/marp-theme-academic
 
-This is a cutomized template for the vscode plugin **marp**, which is a wonderful tool to convert markdown files to slides easily. 
+> This template is forked from [yunzinan/marp-theme-academic](https://github.com/yunzinan/marp-theme-academic), modified by [@ReinanHS](https://github.com/ReinanHS).
 
-## Features✨
+This is a custom template for the Marp plugin in Visual Studio Code (VSCode). The primary purpose of this repository is to provide a clear and clean structure for creating academic presentations.
 
-- changed the colorscheme, using my favourite color #4892ec.
-- changed the font, using the [LXGW WenKai](https://github.com/lxgw/LxgwWenKai), which is friendly to both Chinese and English Displaying.🧐
+Within this repository, you will find an example of an academic presentation related to the field of programming. This example discusses the concept of recursion in programming and is available in Brazilian Portuguese.
 
-## preview🎨
+## Features ✨
 
-📌Click [here](https://marp-theme-academic.vercel.app) to have an instant view!
+- Changed the colorscheme, using [IFS](http://www.ifs.edu.br/) base colors.
+- Changed the font, using the [Public Sans](https://fonts.google.com/specimen/Public+Sans?query=Public+Sans).
 
-![image](https://user-images.githubusercontent.com/98319888/225852411-5a2389db-03a9-4e07-9b5e-1a2b2c3ee46e.png)
+## Preview 🎨
 
-![image](https://user-images.githubusercontent.com/98319888/225852512-829ec28a-b375-49a6-a575-cd1d430bc2be.png)
+This project uses CI/CD automation to automatically process information whenever there are changes to the `main` branch. This means that, when pushing changes to the main branch, the system will automatically export the presentation to HTML format.
 
-![image](https://user-images.githubusercontent.com/98319888/225852579-a88aab2d-d4b1-4dc3-b286-50599ff954dc.png)
+📌 To view the presentation in your browser, [click this link](https://reinanhs.github.io/marp-theme-academic/).
 
-![image](https://user-images.githubusercontent.com/98319888/225852679-7c4663a2-d02d-459b-9baf-112fdab1ba48.png)
+## How to use 🎈
 
-![image](https://user-images.githubusercontent.com/98319888/225857924-4e70eab8-df66-4e03-ad48-eaa36c7eddc7.png)
+1. Clone this repository to your local machine using the command below:
 
-
-## How to use🎈
-
-1. Install the **Marp** plugin in vscode. You can find this plugin in the extension market of vscode.
-
-2. Paste the following codes in you VS Code Settings(`settings.json` file).
-
-```json
-  "markdown.marp.themes": [
-    "https://raw.githubusercontent.com/yunzinan/marp-theme-academic/main/themes/academic.css"
-  ],
-  "markdown.marp.enableHtml": true
+```bash
+git clone https://github.com/reinanhs/marp-theme-academic.git
 ```
 
-3. You may use the [helloworld.md](./helloworld.md) file as a template. Just enjoy it!🥰
+1. Open the `slide-deck.md` file in Visual Studio Code.
 
-## Note🔔
+To make these settings work in Visual Studio Code (VS Code), it is necessary to install the Marp plugin in VS Code. You can find this plugin in the VS Code extensions marketplace.
 
-- you may first install the required font if you want to have the right font display.
+It's worth noting that after you install this plugin and open this template project, the settings will be applied automatically to your editor. This happens due to specific configurations in a file `.vscode/settings.json`, located within the project's directory.
 
-- you may [enable rendering HTML in markdown text](https://github.com/marp-team/marp/discussions/349#discussioncomment-3618297) to have better experience.
+Here is the content of that file:
+
+```json
+{
+    "markdown.marp.themes": [
+        "https://raw.githubusercontent.com/reinanhs/marp-theme-academic/main/themes/academic.css"
+    ],
+    "markdown.marp.enableHtml": true
+}
+```
+
+These configurations ensure the proper functioning of the Marp environment in your VS Code, enabling an optimized editing and presentation experience.
+
+2. Customize the presentation content according to your needs. You can use Markdown to format your slides.
+3. After customizing your presentation, you can generate the slides in PDF format.
+4. Run the command below to generate the slides in PDF format:
+
+```bash
+docker run --rm --init -v "${PWD}:/home/marp/app/" -e LANG="pt_BR.UTF-8" marpteam/marp-cli slide-deck.md --theme themes/academic.css --pdf
+```
+
+6. At the end of execution, the `slide-deck.pdf` file will be generated in the root of your project.
+
+
+## Software stack
+
+Esse projeto roda nos seguintes softwares:
+
+- Marp 2.7.0
+- Docker
+
+## Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information about what has changed recently.
+
+## Contributors
+
+Feel free to contribute improvements, bug fixes or add features to this repository. Just create a fork of the project, make your changes and submit a pull request. Your contributions are welcome!
+
+Do you want to be part of this project? read [how to contribute](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.

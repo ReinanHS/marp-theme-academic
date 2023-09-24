@@ -1,24 +1,23 @@
-/* @theme academic */
+/* @theme academic-ifs */
 
 @import 'gaia';
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 :root {
   --color-background: #fff;
   --color-foreground: #333;
-  --color-highlight: #4892ec;
+  --color-highlight: #63a537;
 }
 
 section {
   background-image: none;
-  font-family: 'LXGW WenKai', sans-serif;
+  font-family: 'Public Sans', sans-serif;
   padding-top: 90px;
   padding-left: 40px;
   padding-right: 40px;
 }
 
-/* https://github.com/marp-team/marpit/issues/271 */
 section::after {
   font-weight: 700;
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
@@ -29,55 +28,54 @@ ul ul {
 }
 
 section.lead h1 {
-  color: #4892ec;
+  color: #63a537;
   text-align: left;
 }
 section.lead h1 strong {
-  -webkit-text-stroke: 1px #4892ec;
+  -webkit-text-stroke: 1px #63a537;
 }
 section.lead h2 {
-  color: #4892ec;
+  color: #63a537;
   text-align: left;
 }
 section.lead h2 strong {
-  -webkit-text-stroke: 1px #4892ec;
+  -webkit-text-stroke: 1px #63a537;
 }
 section.lead h3 {
-  color: #4892ec;
+  color: #63a537;
   text-align: left;
 }
 section.lead h3 strong {
-  -webkit-text-stroke: 1px #4892ec;
+  -webkit-text-stroke: 1px #63a537;
 }
 section.lead h4 {
-  color: #4892ec;
+  color: #63a537;
   text-align: left;
 }
 section.lead h4 strong {
-  -webkit-text-stroke: 1px #4892ec;
+  -webkit-text-stroke: 1px #63a537;
 }
 section.lead h5 {
-  color: #4892ec;
+  color: #63a537;
   text-align: left;
 }
 section.lead h5 strong {
-  -webkit-text-stroke: 1px #4892ec;
+  -webkit-text-stroke: 1px #63a537;
 }
 section.lead p {
   text-align: right;
 }
 
 header {
-  background-color: #4892ec;
-  color: #fff;  
-  text-shadow: #fff 2px 2px 0.2rem;
+  background-color: #63a537;
+  color: #fff;
   font-size: 1em;
   font-weight: 700;
 }
 
 blockquote {
   max-width: 90%;
-  border-top: 0.1em dashed #4892ec;
+  border-top: 0.1em dashed #555;
   font-size: 60%;
   position: absolute;
   bottom: 20px;
@@ -95,5 +93,5 @@ img[alt~="center"] {
 }
 
 code {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Source Code Pro', monospace;
 }
