@@ -19,6 +19,9 @@ Within this repository, you will find an example of an academic presentation rel
 
 This project uses CI/CD automation to automatically process information whenever there are changes to the `main` branch. This means that, when pushing changes to the main branch, the system will automatically export the presentation to HTML format.
 
+![Google Chrome - Light](https://github.com/ReinanHS/marp-theme-academic/assets/28494067/df35d1dc-0cb9-431d-93fc-a533f9681245)
+![Slide 4](https://github.com/ReinanHS/marp-theme-academic/assets/28494067/fb94803c-5f6a-425c-9a70-028b926cbece)
+
 📌 To view the presentation in your browser, [click this link](https://reinanhs.github.io/marp-theme-academic/).
 
 ## How to use 🎈
