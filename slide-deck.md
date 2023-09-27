@@ -7,27 +7,22 @@ math: katex
 
 <!-- _class: lead -->
 
-# Funções Recursisas
+# Funções Recursivas
 
-#### Algoritmos e Estrutura de Dados I
+#### Algoritmos e Estruturas de Dados I
 
-<br>
-
-**Aluno: Reinan Gabriel Dos Santos Souza** 
+**Aluno: Reinan Gabriel Dos Santos Souza**
 Bacharelado em Sistemas de Informação
 Instituto Federal de Sergipe
 Campus Lagarto
 
-<!-- _footer: '23 de setempo de 2023' -->
+<!-- _footer: '23 de setembro de 2023' -->
 
 ---
 
-
 ![bg left:40% 80%](https://avatars.githubusercontent.com/u/28494067?v=4)
 
-<br>
-
-**Reinan Gabriel Dos Santos Souza** 
+**Reinan Gabriel Dos Santos Souza**
 
 Sou um entusiasta de tecnologia apaixonado por aprender e explorar novas áreas.
 
@@ -39,10 +34,10 @@ Sou um entusiasta de tecnologia apaixonado por aprender e explorar novas áreas.
 <!-- _header: Sumário -->
 
 - Recursividade
-- Recursividade em Algoritmos
-- Vantagens da Recursividade
-- Desvantagens da Recursividade
-- Exemplo de Código Recursivo
+- Recursividade em algoritmos
+- Vantagens da recursividade
+- Desvantagens da recursividade
+- Exemplo de código recursivo
 - Conclusão
 
 ---
@@ -52,13 +47,13 @@ Sou um entusiasta de tecnologia apaixonado por aprender e explorar novas áreas.
 A recursividade é um conceito fundamental em programação, onde uma **função chama a si mesma** para resolver um problema. Ela é amplamente utilizada na solução de problemas complexos.
 
 - Consiste em utilizar a própria função que estamos a definir na sua definição;
-- Em todas as função recursivas existem:
+- Em todas as funções recursivas existem:
   - Um passo básico (ou mais) cujo resultado é imediatamente conhecido.
   - Um passo recursivo em que se tenta resolver um sub-problema do problema inicial.
 
 ---
 
-<!-- _header: Recursividade em Algoritmos -->
+<!-- _header: Recursividade em algoritmos -->
 
 - Algoritmos recursivos são aqueles que se dividem em subproblemas menores.
 - Utilizam resultados desses subproblemas para resolver o problema original.
@@ -66,16 +61,16 @@ A recursividade é um conceito fundamental em programação, onde uma **função
 
 ---
 
-<!-- _header: Vantagens da Recursividade -->
+<!-- _header: Vantagens da recursividade -->
 
 - A recursão pode tornar o código mais claro e fácil de entender.
-- Recomendado para resolver problemas que possuem uma estrutura recursiva natural.
+- Recomendada para resolver problemas que possuem uma estrutura recursiva natural.
 - Uma tarefa complexa pode ser dividida em sub-tarefas mais simples usando recursão.
 - Proporciona soluções elegantes.
 
 ---
 
-<!-- _header: Desvantagens da Recursividade -->
+<!-- _header: Desvantagens da recursividade -->
 
 - Pode consumir muita memória em casos de profundidade excessiva.
 - Pode ser menos eficiente do que abordagens iterativas para alguns problemas.
@@ -83,7 +78,7 @@ A recursividade é um conceito fundamental em programação, onde uma **função
 
 ---
 
-<!-- _header: Exemplo de Código Recursivo -->
+<!-- _header: Exemplo de código recursivo -->
 
 Implementação da sequência de Fibonacci, ilustrando como a recursão funciona na prática:
 
@@ -109,7 +104,7 @@ public class FibonacciRecursivo {
 
 <!-- _header: Exemplo de expressões matemáticas -->
 
-Veja como utilizar uma expressão matemática usando esse template:
+Veja como utilizar uma expressão matemática usando este template:
 
 $$
 \begin{align*}
@@ -118,7 +113,6 @@ S(\omega)
 &= \frac{\alpha g^2}{\omega^5} \exp\Bigl[ -0.74\Bigl\{\frac{\omega U_\omega 19.5}{g}\Bigr\}^{\!-4}\,\Bigr] 
 \end{align*}
 $$
-
 
 ---
 
