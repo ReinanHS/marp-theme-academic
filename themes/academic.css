@@ -92,6 +92,23 @@ img[alt~="center"] {
   margin: 0 auto;
 }
 
+img[alt~="top-right"] {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 300px;
+}
+
 code {
   font-family: 'Source Code Pro', monospace;
+}
+
+section.image_with_font p {
+  text-align: center;
+  font-size: 12px;
+}
+
+section.image_with_font blockquote p {
+  text-align: left;
+  font-size: 12px;
 }
